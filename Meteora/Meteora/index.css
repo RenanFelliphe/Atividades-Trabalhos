@@ -11,5 +11,48 @@
 }
 
 .card{
-    background-color: black;
+    background-color: #0f1011;
+    border-color: #101011;
+}
+
+body{
+    background-color: #232325;
+    color: white;
+}
+
+input[type=search], input[type=email]{
+    background-color: #3a3c3d;
+    border-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border: 1px solid #585757;
+}
+input[type=search]::placeholder, input[type=email]::placeholder{
+    color: #9E9C9C;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    background-color: #323435;
+    z-index: 1;
+    color: #ffffff;
+    border-radius: 1rem;
+    border: 1px solid #585757;
+}
+
+.card{
+    cursor: pointer;
+    box-shadow: 0 2px 3px 0px #141414;
+}
+
+.card:hover{
+    width: 104%;
+    height: 104%;
+}
+
+.card p{
+    color: #a8a8a8;
 }
