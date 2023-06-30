@@ -6,8 +6,8 @@
     font-size: 13px;
 }
 
-.div-facilidades{
-    width: 325px;
+.div-facilidades div{
+    cursor: pointer;
 }
 
 .card{
@@ -46,11 +46,19 @@ button{
 .card{
     cursor: pointer;
     box-shadow: 0 2px 3px 0px #141414;
+    transition: all 0.3s;
+    width: 100%;
+    height: 100%;
 }
 
 .card:hover{
     width: 104%;
     height: 104%;
+}
+
+.container-categories .card:hover{
+    background: #556800;
+    border-color: #d0ff00;
 }
 
 .card p{
