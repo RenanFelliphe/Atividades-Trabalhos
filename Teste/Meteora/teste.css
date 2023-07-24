@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', 'sans-serif';
+    text-decoration: none;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    transition: 1s color border-color background-color;
+}
+
+:root {
+    /* ========= VARIÁVEIS DE MODO (PADRÃO) ========= */
+
+    --white-to-black-color: #E2E2E2;
+    /*Essa cor deve ser preta no modo claro e branca no modo escuro*/
+    --black-to-white-color: #131313;
+    /*Essa cor deve ser branca no modo claro e preta no modo escuro*/
+    --text-color: #9E9C9C;
+    /*Cor dos Textos*/
+    --border-color: #585757;
+    /*Cor das Bordas*/
+    --modal-focus-color: #000000ab;
+    /*Cor do body ao abrir um modal*/
+    --active-color: #3a3c3d;
+    /*Cor dos ícones e itens ativados ou com hover*/
+    --first-color: #323435;
+    /*Cor de primeiro foco*/
+    --second-color: #27282A;
+    /*Cor de segundo foco*/
+    --half-second-color: #2D2E30;
+    /*Cor de terceiro foco*/
+    --menu-color: #242526;
+    /*Cor dos Menus*/
+    --third-color: #232325;
+    /*Cor de quarto foco*/
+    --fourth-color: #18191A;
+    /*Cor do body*/
+    
+
+    /* ========= VARIÁVEIS DE CORES (PADRÃO) ========= */
+
+    --org-color1: #00EB00;
+    /*Cor primária*/
+    --org-color2: #00EB00;
+    /*Cor secundária*/
+    --org-color3: #00EB00;
+    /*Cor terciária*/
+    --org-color4: #00EB00;
+    /*Cor quarternária*/
+    --org-color5: #00EB00;
+    /*Cor quinternária*/
+    --org-color-darker: #007200;
+    /*Cor primária mais escuro*/
+    --org-color-lighter: #2DFF2D;
+    /*Cor primária mais claro*/
+    --org-color-low-opacity: #00FF2A80;
+    /*Cor primária com opacidade menor (80%)*/
+    --org-color-transparent: #00FF2A20;
+    /*Cor primária com opacidade muito menor (20%)*/
+
+    /* ============== FONTES ============== */
+
+    --family-font-title: 'Montserrat', 'sans-serif';
+
+    --size-font-title: 26px;
+    --size-font-icons: 18px;
+    --size-font-subtitle: 16px;
+    --size-font-text: 14px;
+
+    --weight-font-normal: 500;
+    --weight-font-bold: 1000;
+
+    /* ============== TANSIÇÕES ============== */
+    --element-in: 0.45s;
+    --element-out: 0.65s;
+}
+
+
+
+
+
+
+
+
+
+.M-menu-header{
+    width: 100%;
+    background-color: var(--menu-color);
+    border: 1px solid var(--border-color);
+}
+
+.navbar-toggler{
+    background-color: var(--half-second-color);
+    border: 1px solid var(--border-color);
+    width: 3.7rem;
+    margin-right: 0.5rem;
+}
+
+.navbar-toggler .M-close{
+    color: var(--text-color);
+    font-size: calc(var(--size-font-icons) + 1.2rem);
+    font-weight: 600;
+}
+
+.M-menu-header i{
+    color: var(--text-color);
+}
+
+.M-menu-header a img {
+    width: 6.5rem;
+    transition: 0.15s;
+    transform: translate(-1.5rem);
+}
+
+.M-menu-header .navbar-nav{
+    display: flex;
+    gap: 2rem;
+}
+
+.M-menu-header .navbar-nav .M-header-search {
+    background-color: var(--third-color);
+    border: 1px solid var(--border-color);
+    border-radius: 5rem;
+    min-width: 18.125rem;
+    width: 45%;
+    height: 55%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 0.3125rem 0 0.3125rem;
+}
+
+.M-menu-header .navbar-nav .M-header-search input {
+    outline: none;
+    border: none;
+    width: 12.5rem;
+    background: none;
+}
